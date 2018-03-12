@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<script>
+		var num = prompt("Give me a number");
+		console.log("The original number is "+num)
+		
+		var thou_mod=num%1000
+		var thou=num-thou_mod
+		var thou_place=thou/1000
+		
+		console.log(thou_place+" thousands")
+		
+		var hun_mod=thou_mod%100
+		var hun=thou_mod-hun_mod
+		var hun_place=hun/100
+		
+		console.log(hun_place+" hundreds")
+		
+		var tens_mod=hun_mod%10
+		var tens=hun_mod-tens_mod
+		var tens_place=tens/10
+		
+		console.log(tens_place+" tens")
+		
+		var ones_mod=num%1
+		var ones=tens_mod-ones_mod
+		var ones_place=ones/1
+		
+		console.log(ones_place+" ones")
+		
+		
+	</script>
+</body>
+</html>
